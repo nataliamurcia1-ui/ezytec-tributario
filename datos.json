@@ -1,0 +1,1298 @@
+{
+  "_instrucciones": {
+    "descripcion": "Archivo de datos del Dashboard Tributario EzyTec 2026",
+    "como_editar": [
+      "1. Edite los registros en el arreglo 'obligaciones'",
+      "2. Guarde el archivo como 'datos.json' en la misma carpeta que el HTML",
+      "3. Abra el HTML en el navegador — los datos se cargan automáticamente",
+      "4. Si usa Excel: exporte a CSV y convierta con una herramienta online a JSON"
+    ],
+    "campos": {
+      "tipo": "Categoría del impuesto: NACIONALES | DIST | ICA ANUAL | EXOGENA DISTR. | REPORTES / RENTA",
+      "nombre": "Nombre del impuesto o municipio",
+      "periodo": "Período: Enero, Febrero, Bimestre I, Anual, etc.",
+      "fecha_venc": "Fecha de vencimiento en formato AAAA-MM-DD",
+      "pago": "Valor efectivamente pagado (número sin puntos ni comas)",
+      "valor": "Valor del impuesto liquidado (número sin puntos ni comas)",
+      "presentado": "Estado: escriba PRESENTADO si ya fue presentado, dejar vacío si no"
+    },
+    "estados_semaforo": {
+      "VENCIDO": "fecha_venc anterior a hoy y presentado vacío",
+      "URGENTE": "fecha_venc en los próximos 14 días y presentado vacío",
+      "PROXIMO": "fecha_venc entre 15 y 30 días y presentado vacío",
+      "PRESENTADO": "campo presentado = PRESENTADO",
+      "FUTURO": "fecha_venc mayor a 30 días"
+    }
+  },
+  "obligaciones": [
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Enero",
+      "fecha_venc": "2026-02-11",
+      "pago": 57439000,
+      "valor": 57439000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Febrero",
+      "fecha_venc": "2026-03-11",
+      "pago": 64880,
+      "valor": 64880,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Marzo",
+      "fecha_venc": "2026-04-14",
+      "pago": 60030000,
+      "valor": 59989000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Abril",
+      "fecha_venc": "2026-05-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Mayo",
+      "fecha_venc": "2026-06-11",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Junio",
+      "fecha_venc": "2026-07-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Julio",
+      "fecha_venc": "2026-08-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Agosto",
+      "fecha_venc": "2026-09-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Septiembre",
+      "fecha_venc": "2026-10-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Octubre",
+      "fecha_venc": "2026-11-12",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCIÓN EN LA FUENTE",
+      "periodo": "Noviembre",
+      "fecha_venc": "2026-12-11",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-03-11",
+      "pago": 575926000,
+      "valor": 612312000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-05-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-07-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-09-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-11-12",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BOGOTA",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-04-10",
+      "pago": 22801000,
+      "valor": 30257000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BOGOTA",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-06-12",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BOGOTA",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-08-21",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BOGOTA",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-10-09",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BOGOTA",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-12-11",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETEICA BOGOTA BIM",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-03-20",
+      "pago": 9597000,
+      "valor": 9560000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETEICA BOGOTA BIM",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-05-22",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETEICA BOGOTA BIM",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-07-17",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETEICA BOGOTA BIM",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-09-18",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETEICA BOGOTA BIM",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-11-20",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Enero",
+      "fecha_venc": "2026-02-13",
+      "pago": 3000,
+      "valor": 3000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Febrero",
+      "fecha_venc": "2026-03-13",
+      "pago": 3000,
+      "valor": 3000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Marzo",
+      "fecha_venc": "2026-04-16",
+      "pago": 7000,
+      "valor": 7000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Abril",
+      "fecha_venc": "2026-05-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Mayo",
+      "fecha_venc": "2026-06-16",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Junio",
+      "fecha_venc": "2026-07-14",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Julio",
+      "fecha_venc": "2026-08-18",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Agosto",
+      "fecha_venc": "2026-09-14",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Septiembre",
+      "fecha_venc": "2026-10-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Octubre",
+      "fecha_venc": "2026-11-17",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL PIEDECUESTA",
+      "periodo": "Noviembre",
+      "fecha_venc": "2026-12-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Enero",
+      "fecha_venc": "2026-02-10",
+      "pago": 3000,
+      "valor": 27000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Febrero",
+      "fecha_venc": "2026-03-10",
+      "pago": 7000,
+      "valor": 28000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Marzo",
+      "fecha_venc": "2026-04-10",
+      "pago": 14000,
+      "valor": 611000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Abril",
+      "fecha_venc": "2026-05-11",
+      "pago": 4000,
+      "valor": 29000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Mayo",
+      "fecha_venc": "2026-06-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Junio",
+      "fecha_venc": "2026-07-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Julio",
+      "fecha_venc": "2026-08-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Agosto",
+      "fecha_venc": "2026-09-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Septiembre",
+      "fecha_venc": "2026-10-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL MOSQUERA",
+      "periodo": "Octubre",
+      "fecha_venc": "2026-11-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-03-27",
+      "pago": 1000,
+      "valor": 19000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-07-31",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-09-25",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-11-27",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-03-19",
+      "pago": 3000,
+      "valor": 63000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-05-21",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-07-23",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-09-24",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-11-19",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre I",
+      "fecha_venc": "2026-03-26",
+      "pago": 312000,
+      "valor": 312000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre II",
+      "fecha_venc": "2026-05-27",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre III",
+      "fecha_venc": "2026-07-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre IV",
+      "fecha_venc": "2026-09-24",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre V",
+      "fecha_venc": "2026-11-26",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Enero",
+      "fecha_venc": "2026-02-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Febrero",
+      "fecha_venc": "2026-03-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Marzo",
+      "fecha_venc": "2026-04-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Abril",
+      "fecha_venc": "2026-05-11",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Mayo",
+      "fecha_venc": "2026-06-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Junio",
+      "fecha_venc": "2026-07-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Julio",
+      "fecha_venc": "2026-08-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Agosto",
+      "fecha_venc": "2026-09-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Septiembre",
+      "fecha_venc": "2026-10-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Octubre",
+      "fecha_venc": "2026-11-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "BARRANQUILLA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-02-26",
+      "pago": 1000,
+      "valor": 11377000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "BUCARAMANGA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-04",
+      "pago": 1378000,
+      "valor": 15064000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "CAJICA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-01",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "CALI",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-02",
+      "pago": 1625000,
+      "valor": 16953000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "CARTAGENA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 3079000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "CHIA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "CUCUTA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "ENVIGADO",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-26",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "FLORIDABLANCA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-26",
+      "pago": 3422000,
+      "valor": 4126000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "FUNZA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-02-27",
+      "pago": 131000,
+      "valor": 322000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "GIRARDOT",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-30",
+      "pago": 136000,
+      "valor": 248000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "IBAGUE",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 64000,
+      "valor": 2362000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "IPIALES",
+      "periodo": "Anual",
+      "fecha_venc": "2026-02-28",
+      "pago": 131000,
+      "valor": 349000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "MANIZALES",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "MEDELLIN",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "MONTERIA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 0,
+      "valor": 388000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "MOSQUERA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 46000,
+      "valor": 1007000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "NEIVA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-24",
+      "pago": 0,
+      "valor": 662000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "PEREIRA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 35200,
+      "valor": 420000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "PIEDECUESTA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-31",
+      "pago": 0,
+      "valor": 33000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "RIONEGRO",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-07",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "SAN GIL",
+      "periodo": "Anual",
+      "fecha_venc": "2026-03-27",
+      "pago": 1283000,
+      "valor": 1509000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "SOACHA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-30",
+      "pago": 3000,
+      "valor": 228000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "TUNJA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "VILLAVICENCIO",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-09",
+      "pago": 138000,
+      "valor": 2717000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "DECLARACION DE RENTA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "ACTIVOS EN EL EXTERIOR",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "FORMATO 2516",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-13",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "EXOGENA NACIONAL",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-06",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "EXOGENA NACIONAL UT",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-01",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "PRECIOS DE TRANSFERENCIA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-09-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "SUPERVIGILANCIA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "REPORTES / RENTA",
+      "nombre": "SUPERSOCIEDADES",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-08",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "BARRANQUILLA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-14",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "CAJICA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-22",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "CALI",
+      "periodo": "Anual",
+      "fecha_venc": "2026-07-24",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "CARTAGENA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-09-04",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "CUCUTA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "FLORIDABLANCA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-29",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "FUNZA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "GIRARDOT",
+      "periodo": "Anual",
+      "fecha_venc": "2026-08-18",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "IPIALES",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-24",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "MANIZALES",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "MEDELLIN",
+      "periodo": "Anual",
+      "fecha_venc": "2026-08-04",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "MONTERIA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-04",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "MOSQUERA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-04-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "PEREIRA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-05-31",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "RIONEGRO",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-30",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "SOACHA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-06-16",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "EXOGENA DISTR.",
+      "nombre": "TUNJA",
+      "periodo": "Anual",
+      "fecha_venc": "2026-07-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "RETENCION EN LA FUENTE",
+      "periodo": "Diciembre",
+      "fecha_venc": "2026-01-14",
+      "pago": 124025000,
+      "valor": 124025000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "RETE ICA BIM",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-16",
+      "pago": 23712000,
+      "valor": 23712000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "ICA BIM SOACHA",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-27",
+      "pago": 1000,
+      "valor": 37000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "ICA ANUAL",
+      "nombre": "ICA BIM PEREIRA",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-16",
+      "pago": 2000,
+      "valor": 37000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "DANE",
+      "periodo": "Diciembre",
+      "fecha_venc": "2026-01-10",
+      "pago": 0,
+      "valor": 0,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM CARTAGENA",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-30",
+      "pago": 416000,
+      "valor": 416000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA BIM BARRANQUILLA",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-29",
+      "pago": 6423000,
+      "valor": 11377000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "NACIONALES",
+      "nombre": "IVA BIM",
+      "periodo": "Bimestre VI",
+      "fecha_venc": "2026-01-14",
+      "pago": 947641000,
+      "valor": 1110066000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Enero",
+      "fecha_venc": "2026-02-16",
+      "pago": 8000,
+      "valor": 8000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Febrero",
+      "fecha_venc": "2026-03-16",
+      "pago": 503000,
+      "valor": 503000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Marzo",
+      "fecha_venc": "2026-04-15",
+      "pago": 161000,
+      "valor": 161000,
+      "presentado": "PRESENTADO"
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Abril",
+      "fecha_venc": "2026-05-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Mayo",
+      "fecha_venc": "2026-06-16",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Junio",
+      "fecha_venc": "2026-07-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Julio",
+      "fecha_venc": "2026-08-18",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Agosto",
+      "fecha_venc": "2026-09-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Septiembre",
+      "fecha_venc": "2026-10-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Octubre",
+      "fecha_venc": "2026-11-17",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    },
+    {
+      "tipo": "DIST",
+      "nombre": "ICA MENSUAL NEIVA",
+      "periodo": "Noviembre",
+      "fecha_venc": "2026-12-15",
+      "pago": 0,
+      "valor": 0,
+      "presentado": ""
+    }
+  ]
+}
